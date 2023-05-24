@@ -19,7 +19,7 @@ public class Main {
         */
 
 
-        Scanner leer = new Scanner(System.in);
+        //Scanner leer = new Scanner(System.in);
 
 
        /* System.out.println("Ingresa tu nombre");
@@ -56,7 +56,7 @@ public class Main {
 
        }
 */
-
+/*
         System.out.println("Ingrese el tipo de motor");
         int tipoMotor = leer.nextInt();
 
@@ -68,9 +68,10 @@ public class Main {
                     "gasolina”.");
             case 4 -> System.out.println("“La bomba es una bomba de\n" +
                     "pasta alimenticia”.");
+
             default -> System.out.println("No existe un valor válido para tipo de bomba");
         }
-        int nota = 20;
+        /*int nota = 20;
 
         do {
             System.out.println("Ingrese una nota entre 0 y 10");
@@ -79,7 +80,55 @@ public class Main {
         while (nota > 10 || nota < 0);
 
         System.out.println("La nota ingresada es: "+nota);
+*/
+        //leer.next().charAt(0)
+
+        /*int numeros = (int)(Math.random()*200-20);
+        int cont = 0, suma = 0;
 
 
+        while (cont < 20) {
+
+            cont = cont + 1;
+            System.out.println(cont);
+            System.out.println(numeros);
+            if (numeros == 0) {
+                System.out.println("Se capturó el número cero.");
+                break;
+            } else if (numeros > 0) {
+                suma = suma + numeros;
+                System.out.println("contador: "+cont);
+            }
+        }
+
+        System.out.println("La suma de los numeros es: "+suma);
+
+         */
+
+
+        //FOR//
+        /*for(int i = 0; i<10; i++){
+            System.out.println("Imprimo el valor de i: "+i);
+        }
+        for(int i = 10;i >0; i--){
+            System.out.println("Imprimo el valor decreciente de i: "+i);
+        }
+        */
+
+
+        Scanner leer = new Scanner(System.in);
+
+        for (int i = 1; i <=4; i++){
+            System.out.println("Ingrese el número "+i);
+            int num = leer.nextInt();
+            System.out.print(num + " ");
+            for(int j = 1; j <= num; j++){
+
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
     }
+
+
 }
