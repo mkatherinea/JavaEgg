@@ -6,8 +6,8 @@ public class ej_11 {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
 
-        System.out.println("Ingrese una frase");
-        String frase = leer.next();
+        System.out.println("Ingrese una frase, que termine en un punto");
+        String frase = leer.nextLine();
         modificarFrase(frase);
 
     }
@@ -17,28 +17,26 @@ public class ej_11 {
 
 
         for(int i = 0; i < frase.length(); i++){
-            String letra = frase.substring(i,i);
+           char letra = frase.charAt(i);
 
-            switch (letra){
-                case "a":
-                    letra= "@";
+            switch (Character.toLowerCase(letra)){
+                case 'a':
+                    letra= '@';
                     break;
-                case "e":
-                    letra = "#";
+                case 'e':
+                    letra = '#';
                     break;
-                case "i":
-                    letra = "$";
+                case 'i':
+                    letra = '$';
                     break;
-                case "o":
-                    letra = "%";
+                case 'o':
+                    letra = '%';
                     break;
-                case "u":
-                    letra = "*";
+                case 'u':
+                    letra = '*';
                     break;
-                default:
-                    letra = letra;
             }
-            fraseMod = fraseMod.concat(letra);
+            fraseMod = fraseMod.concat(String.valueOf(letra));
 
 
         }
